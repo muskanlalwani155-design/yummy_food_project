@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Overlay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #050505; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Close Button styling */
+        .close-btn {
+            position: absolute;
+            top: 50px; 
+            left: 50%;
+            transform: translateX(-50%); 
+            width: 45px;
+            height: 45px;
+            border-radius: 50%; 
+            background-color: #2a2a2a; 
+            border: none;
+            color: #ffffff;
+            font-size: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .close-btn:hover {
+            background-color: #444444; 
+        }
+
+        
+        .search-container {
+            width: 50%;
+
+        }
+
+        /* Input Field Styling */
+        .search-container input {
+            width: 100%;
+            background: transparent; 
+            border: none; 
+            border-bottom: 2px solid #4a4a4a; 
+            padding-bottom: 10px;
+            font-size: 35px;
+            color: #ffffff;
+            outline: none; 
+            font-weight: 300;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <button class="close-btn" onclick="history.back()">&times;</button>
+
+    <div class="search-container">
+        <input type="text" placeholder="Search here.....">
+    </div>
+
+</body>
+</html>
